@@ -1,0 +1,106 @@
+<view class="ad_img">
+  <image class="ad_img" mode="widthFix" src="{{ad_img2}}"></image>
+</view>
+<!-- 轮播图 -->
+<swiper autoplay="true" circular="true" indicator-dots="true">
+  <swiper-item wx:for="{{lunbo_img}}" wx:key="ietm">
+    <navigator url="{{item.dizhi}}">
+      <image class="ad_img" mode="widthFis" src="{{item.tupian}}">
+      </image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<!-- 快捷菜单 -->
+<view class="meun">
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">品牌大全</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">最新上架</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">用户中心</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">订单类表</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">留言反馈</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">活动列表</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">帮助中心</text>
+  </navigator>
+  <navigator class="meun-ietm">
+    <image class="ad_img" mode="widthFix" class="meun-img" src="/img/yongfu.png">
+    </image>
+    <text class="meun-text">关于我们</text>
+  </navigator>
+</view>
+<!-- 最新信息 -->
+<block wx:for="{{xinxis}}" wx:key="index">
+  <navigator url="{{item.myid}}" class="xinxi">
+    <image class="xinxi-icon xinxi-img" src="/img/laba.png">
+    </image>
+    <text class="xinxi-text">{{item.myshijian}} {{item.mybiaoti}}</text>
+    <image src="/img/youjiantou.png" class="xinxi-arror xinxi-img"></image>
+  </navigator>
+</block>
+<!-- 区块标题 -->
+<view class="qukuai">
+  <view class="qukuai-one"></view>
+  <view class="qukuai-two">最新上架</view>
+  <view class="qukuai-therr">最新上架</view>
+</view>
+<view class="zuixin">
+  <block wx:for="{{chanpin}}" wx:key="index">
+    <navigator class="zuixin-ietm">
+      <image mode="widthFix" class="zuixin-img" src="{{item.cp_tupian}}"></image>
+      <text class="zuixin-mc">{{item.cp_mingcheng}}</text>
+      <view>
+        <text class="zuixin-jiage0">￥</text>
+        <text class="zuixin-jiage1">{{item.jiage}}</text>
+        <text class="zuixin-jiage2">465人付款</text>
+      </view>
+    </navigator>
+  </block>
+</view>
+<!-- 销售排行 -->
+<view class="qukuai">
+  <view class="qukuai-one"></view>
+  <view class="qukuai-two">销售排行</view>
+  <view class="qukuai-therr">最新上架</view>
+</view>
+<block wx:for="{{chanpin}}" wx:key="index">
+  <navigator id="drawID" class="paihang-item mjltest">
+    <view class="paihang-tupian">
+      <image style="width:{{heights}}" mode="widthFix" class="paihang-img" src="{{item.cp_tupian}}"></image>
+    </view>
+    <view class="paihang-xinxi">
+      <text class="paihang-mingcheng0 zuixin-mc">{{item.cp_mingcheng}}</text>
+      <text class="paihang-mingcheng1">产品介绍</text>
+      <view>
+        <text class="paihang-jiage">No{{index+1}}</text>
+        <text class="paihang-jiage0">|888人付款</text>
+        <text>￥</text>
+        <text class="paihang-jiage01">{{item.jiage}}</text>
+      </view>
+    </view>
+  </navigator>
+</block>

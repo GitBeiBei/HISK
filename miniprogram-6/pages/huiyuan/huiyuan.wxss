@@ -1,0 +1,47 @@
+page{
+   background-color: #f2f2f2;
+}
+.denglu{
+ display: flex;
+ flex-direction:column;
+ align-items: center; 
+ box-sizing: border-box;
+ justify-content: space-between;
+}
+.shuoming{
+  display: block;
+  color: gray;
+  font-size: 14px;
+  margin: 8px 0px;
+}
+.label{
+  color: gray;
+  width: 4.5rem;
+}
+.form-war{
+  border-top: 1px solid #eee;
+}
+.inpt-wap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-wrap{
+  background: white;
+  border-bottom: 1px solid #eee;
+  height: 46px;
+  line-height: 46px;
+  /* margin: 0 -12px;
+  padding: 0px 12px; */
+}
+.zccount-info-input{
+  font-size: 18px;
+  line-height: 100%;
+  width: 100%;
+}
+.musubmit{
+  width: 100%;
+}
+.wxmusubmit{
+  width: 100%;
+}

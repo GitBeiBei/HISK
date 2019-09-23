@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fenlei/gouwu",
+    "pages/huiyuan/huiyuan",
+    "pages/gouwuche/gouwuche",
+    "pages/index/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/fenlei/gouwu"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/gouwuche/gouwuche"
+      },
+      {
+        "text": "会员",
+        "pagePath": "pages/huiyuan/huiyuan"
+      },
+      {
+        "text": "关于我们",
+        "pagePath": "pages/logs/logs"
+      }
+    ]
+  }
+}

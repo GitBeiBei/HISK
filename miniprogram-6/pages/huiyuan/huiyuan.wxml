@@ -1,0 +1,20 @@
+<!--pages/huiyuan/huiyuan.wxml-->
+<form class="mys-item">
+  <view class="denglu">
+    <text class="shuoming">请输入你的会员账号</text>
+    <view class="form-war">
+      <view class="inpt-wap input-wrap">
+        <text class="label">账号:</text>
+        <input class="zccount-info-input" type="number" nama="uernama"></input>
+      </view>
+      <view class="inpt-wap input-wrap">
+        <text class="label">密码:</text>
+        <input class="zccount-info-input" type="password" nama="uernama"></input>
+      </view>
+    </view>
+    <text class="shuoming">请正确的填写账号信息，有问题联系联系客服</text>
+    <button class="musubmit" type="primary">登陆</button>
+    <button class="musubmit" type="primary">注册新用户</button>
+    <button class="wxmusubmit">微信登陆</button>
+  </view>
+</form>
